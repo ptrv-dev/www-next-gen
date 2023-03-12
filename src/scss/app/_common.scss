@@ -37,3 +37,35 @@ h5,
 h6 {
   font-family: $heading-font-family;
 }
+
+.button {
+  padding: 20px 40px;
+  background: $gradient;
+  color: $white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  // .button_o
+
+  &_o {
+    background: none;
+    position: relative;
+    background-clip: padding-box;
+    background: $black;
+    padding: 18px 38px;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      content: '';
+      display: block;
+      background: $gradient;
+      border-radius: inherit;
+      margin: -2px;
+    }
+  }
+}
