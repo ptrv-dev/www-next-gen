@@ -27,6 +27,9 @@ body {
 
 main {
   flex: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
 }
 
 h1,
@@ -46,6 +49,8 @@ h6 {
   border-radius: 10px;
   font-size: 1rem;
   font-weight: 500;
+  border: none;
+  cursor: pointer;
   // .button_o
 
   &_o {
@@ -67,5 +72,19 @@ h6 {
       border-radius: inherit;
       margin: -2px;
     }
+  }
+}
+
+.section {
+  &__header {
+    margin: 0 auto;
+    max-width: 680px;
+    margin-bottom: 60px;
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 56px;
+    text-align: center;
+    color: $white;
   }
 }
