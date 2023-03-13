@@ -26,6 +26,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 main {
@@ -33,6 +34,10 @@ main {
   display: flex;
   flex-direction: column;
   gap: 180px;
+}
+
+button {
+  cursor: pointer;
 }
 
 h1,
