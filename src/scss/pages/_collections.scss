@@ -1,0 +1,64 @@
+.collections {
+  // .collections__container
+
+  &__container {
+  }
+
+  // .collections__body
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.collection-item {
+  max-width: calc(100% / 4 - 20px);
+  width: 100%;
+  background: rgba(134, 155, 223, 0.14);
+  border: 2px solid rgba(83, 84, 136, 0.4);
+  border-radius: 300px;
+  padding: 35px 35px 70px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  // .collection-item__image
+
+  &__image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  // .collection-item__body
+
+  &__body {
+    margin-top: 40px;
+  }
+
+  // .collection-item__title
+
+  &__title {
+    margin-bottom: 14px;
+    font-size: 22px;
+    color: $white;
+    text-transform: capitalize;
+  }
+
+  // .collection-item__link
+
+  &__link {
+    font-weight: 500;
+    font-size: 1rem;
+    color: $primary;
+    text-decoration: none;
+  }
+}
