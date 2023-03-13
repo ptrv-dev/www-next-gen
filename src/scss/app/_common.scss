@@ -50,6 +50,8 @@ h6 {
   font-size: 1rem;
   font-weight: 500;
   border: none;
+  display: inline-flex;
+  justify-content: center;
   cursor: pointer;
   // .button_o
 
@@ -80,11 +82,14 @@ h6 {
     margin: 0 auto;
     max-width: 680px;
     margin-bottom: 60px;
+    text-align: center;
   }
   &__title {
     font-weight: 900;
     font-size: 56px;
-    text-align: center;
     color: $white;
+  }
+  &__subtitle {
+    margin-top: 24px;
   }
 }
