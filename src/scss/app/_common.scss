@@ -11,6 +11,9 @@ body {
   font-size: $font-size;
   color: $font-color;
   background: $body-background;
+  &.ovh {
+    overflow: hidden;
+  }
 }
 
 .container {
