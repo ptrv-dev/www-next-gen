@@ -1,8 +1,16 @@
 .hero {
+  position: relative;
   min-height: 100vh;
   padding-top: 180px;
   @media screen and (max-width: 768px) {
     padding-top: 120px;
+  }
+
+  &__decorator {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    z-index: -1;
   }
 
   // .hero__container

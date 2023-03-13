@@ -1,5 +1,12 @@
 .footer {
   margin-top: 180px;
+  position: relative;
+  &__decorator {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
   // .footer__container
 
   &__container {
