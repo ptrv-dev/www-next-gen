@@ -10,6 +10,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: 1023.98px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
   }
 }
 .collection-item {
@@ -23,11 +28,20 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  @media screen and (max-width: 1023.98px) {
+    max-width: 320px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 25px 25px 50px 25px;
+  }
+
   // .collection-item__image
 
   &__image {
-    width: 280px;
-    height: 280px;
+    // width: 280px;
+    // height: 280px;
     border-radius: 50%;
     overflow: hidden;
     img {
