@@ -160,6 +160,6 @@ h6 {
   &::placeholder {
     color: rgba($white, 0.5);
   }
-  width: 360px;
+  min-width: 0;
   flex: 1;
 }
