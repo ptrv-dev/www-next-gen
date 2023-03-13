@@ -5,6 +5,14 @@
   left: 0;
   right: 0;
 
+  transition: all 0.2s ease-in-out;
+
+  &.scroll {
+    top: 0;
+    padding: 16px 0;
+    background: $black;
+  }
+
   // .header__container
 
   &__container {

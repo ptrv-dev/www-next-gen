@@ -1,4 +1,5 @@
 const body = document.body;
+const header = document.querySelector('.header');
 const headerMenuButton = document.querySelector('.header__menu');
 const headerMenuNavigation = document.querySelector('nav.header__nav.nav');
 const headerMenuActions = document.querySelector('.header__actions');
@@ -34,5 +35,18 @@ const handleResize = () => {
   }
 };
 
+const handleScroll = () => {
+  if (window.scrollY > 100) {
+    header.classList.add('scroll');
+  } else {
+    header.classList.remove('scroll');
+  }
+};
+
 window.addEventListener('resize', handleResize);
-window.addEventListener('load', handleResize);
+window.addEventListener('scroll', handleScroll);
+
+window.addEventListener('load', () => {
+  handleResize();
+  handleScroll();
+});
