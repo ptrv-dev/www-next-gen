@@ -55,6 +55,15 @@ h6 {
   justify-content: center;
   cursor: pointer;
 
+  transition: background-size 0.3s ease-in-out,
+    background-position 1s ease-in-out;
+  background-size: 100%;
+
+  &:hover {
+    background-size: 300%;
+    background-position: 100% 0%;
+  }
+
   // .button_o
 
   &_o {
@@ -75,6 +84,16 @@ h6 {
       background: $gradient;
       border-radius: inherit;
       margin: -2px;
+      transition: background-size 0.3s ease-in-out,
+        background-position 1s ease-in-out;
+      background-size: 100%;
+    }
+
+    &:hover {
+      &::before {
+        background-size: 300%;
+        background-position: 100% 0%;
+      }
     }
   }
 }
